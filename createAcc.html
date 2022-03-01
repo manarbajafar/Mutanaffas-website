@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>إنشاء حساب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sign.css">
+    <script type="text/javascript" src="javascript/pswdCheck.js"></script>
+  </head>
+  
+  <body>
+    <nav>
+      <ul>
+
+        <li><a a href="#"><img src="css/down.png" width="7" height="8">المزيد</a>
+          <ul>
+            <li><a href="famous.html">أشهر الرسامين</a></li>
+            <li><a href="courses.html">دورات الرسم</a></li>
+            <li><a href="tools.html">أدوات الرسم</a></li>
+            <li><a href="drawings.html">رسومات</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contactUs.html">تواصل معنا</a>
+        </li>
+        <li><a href="about.html">عن متنفس</a>
+        </li>
+        <li><a href="index.html" id="logo"><img src="css/logo.png" width="45" height="105"></a>
+        </li>
+      </ul>
+    </nav>
+    <div dir="rtl" class="container"> 
+      <h2>تــــسجيل</h2>
+        <form method="post" action="logIn.html" onsubmit="return verifyPassword()" >    
+           <label><b>اسم المستخدم: </b>
+              <input type="text" name="Uname" id="Uname" required placeholder="ادخل الاسم الكامل أو اسم المستخدم">    
+            </label> 
+            <label><b>البريد الإلكتروني: </b>
+                <input type="email" name="email" id="email" required placeholder="yourname@example.com">
+            </label>  
+            <label><b>كلمة المرور: </b>      
+              <input type="Password" name="pswd" id="pswd" required placeholder="ادخل كلمة المرور"> 
+            </label>
+            <input type="submit" value="تسجيل">   
+        </form>
+        <span>لديك حساب بالفعل؟
+          <a href="logIn.html">قم بتسجيل الدخول</a>
+        </span>
+    </div>  
+    <footer>
+        <div class="icon">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </footer> 
+  </body>
+</html>  

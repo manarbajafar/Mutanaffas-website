@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>طلب تقديم دورة</title>
+    <link rel="stylesheet" href="css/style.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+       
+       <style> 
+		
+	   h1{
+        text-align: center;
+        color:#2A595C; 
+        }
+		label{
+          display: block;
+          font-size: 17px;  
+        }  
+        input{
+          width: 300px;  
+          height: 30px;  
+          border: none;  
+          border-radius: 3px;  
+        } 
+        .btn{  
+            width: 99%;  
+            height: 40px;  
+            border: none;  
+            background-color:#475046; 
+            color: #FDEEE4;
+            border-radius: 17px;  
+            margin-top: 20px;
+            margin-bottom: 10px; 
+            cursor: pointer;
+            font-family: font;
+            font-size:15px;
+        } 
+        .btn:hover{
+        opacity: 0.9;
+      }
+
+        textarea{
+          width: 300px;  
+          height: 100px;  
+          border: none;  
+          border-radius: 3px;  
+        }
+        select{
+          width: 300px;  
+          height: 30px;  
+          border: none;  
+          border-radius: 3px;
+        }
+		fieldset {
+	      border: none;
+        float:right;
+        }
+		.hdr{
+		   	border: solid;
+	      border-radius: 15px;
+			  border-color:#2A595C;
+			  border-width: 2px;
+        color:#2A595C; 
+		}
+    .content{
+       width: 67%;  
+       height: 70%;
+       margin: auto;  
+    }
+		
+        </style>
+           
+</head>
+
+<body>
+    <nav>
+        <ul>
+
+          <li><a a href="#"><img src="css/down.png" width="7" height="8">المزيد</a>
+            <ul>
+              <li><a href="famous.html">أشهر الرسامين</a></li>
+              <li><a href="courses.html">دورات الرسم</a></li>
+              <li><a href="tools.html">أدوات الرسم</a></li>
+              <li><a href="drawings.html">رسومات</a></li>
+            </ul>
+          </li>
+
+          <li><a href="logIn.html">تسجيل الدخول</a>
+          </li>
+          <li><a a href="createAcc.html">تسجيل</a>
+          </li>
+          <li><a href="contactUs.html">تواصل معنا</a>
+          </li>
+          <li><a href="about.html">عن متنفس</a>
+          </li>
+          <li><a href="index.html" id="logo"><img src="css/logo.png" width="45" height="105"></a>
+          </li>
+        </ul>
+      </nav>
+
+    <div dir="rtl">
+        <h1>طلب تقديم دورة</h1>
+	
+	<form class="content" method="" action="" >
+		 <fieldset>
+			<h2 class="hdr">&nbsp &nbsp بيانات الدورة</h2>
+			<div class="fields">
+				<p class="row">
+					<label for="subject">اسم المادة التي تود طرحها*:</label>
+					<input type="text" id="subject" name="subject" class="field-large" required />
+				</p>
+				<p class="row">
+					<label for="city">المدينة:</label>
+					<input type="text" id="city" name="city" class="field-large" />
+				</p>
+				<div class="row">
+					<label for="online">عبر الإنترنت:</label>
+					<select id="online" name="online">
+						<option value="y">نعم</option>
+						<option value="n">لا</option>
+					</select>
+				</div>
+                <p class="row">
+					<label for="hours">عدد ساعات الدورة:</label>
+					<input type="text" id="hours" name="hours" class="field-large" />
+				</p>
+                <div class="row">
+					<label for="mORf">الجنس:</label>
+					<select id="mORf" name="mORf">
+						<option value="m_f">رجال & نساء</option>
+						<option value="m">رجال</option>
+                        <option value="f">نساء</option>
+					</select>
+				</div>
+                <div class="row">
+                 <label> نبذة عن الدورة*:</label>
+                 <textarea id="textarea"  name="textarea" rows="6" cols="60" required></textarea>
+                </div>
+                <p class="row">
+					<label for="time">الوقت المقترح لإقامة الدورة :</label>
+					<input type="text" id="time" name="time" class="field-large" />
+				</p>
+                <p class="row">
+					<label for="date">التاريخ المقترح لإقامة الدورة:</label>
+					<input type="text" id="date" name="date" class="field-large" />
+				</p>
+			</div>
+		</fieldset>
+        <fieldset>
+			<h2 class="hdr">&nbsp &nbsp إرفاق ملفات</h2>
+			<div class="fields">
+				<div class="row">
+					<label for="file">إضافة ملف:</label>
+					<input type="file" id="file" name="file" />
+					<p class="instructions">الحجم الأقصى 700 كيلوبايت JPG أو GIF أو PNG.</p>
+				</div>	
+		</fieldset>
+        <fieldset>
+			<h2 class="hdr">&nbsp &nbsp بيانات مقدم الطلب</h2>
+			<div class="fields">
+				<p class="row">
+					<label for="name">الإسم كاملاً*:</label>
+					<input type="text" id="name" name="name" class="field-large" required />
+				</p>
+				<p class="row">
+					<label for="age">العمر:</label>
+					<input type="text" id="age" name="age" class="field-large" />
+				</p>
+				<div class="row">
+					<label for="mf">الجنس:</label>
+					<select id="mf" name="mf">
+						<option value="male">ذكر</option>
+						<option value="female">أنثى</option>
+					</select>
+				</div>
+                <p class="row">
+					<label for="email">البريد الإلكتروني*:</label>
+					<input type="text" id="email" name="email" class="field-large" required />
+				</p>
+                <p class="row">
+					<label for="phoneNum">رقم الجوال*:</label>
+					<input type="text" id="phoneNum" name="phoneNum" class="field-large" required />
+				</p>
+                
+			</div>
+		</fieldset>
+
+        <input type="submit" value="إنشاء الطلب" class="btn" />
+          <br><br><br>
+
+    </div>
+
+    
+
+
+<footer>
+    <div class="icon">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+</footer>
+
+</body>
+
+</html>

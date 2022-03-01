@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;  
+  }
+  .container{
+    font-family:'Acme' ,'Tajawal';
+    width: 95%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    color:#475046 ;
+  }
+  .profile{
+    height: 100px;
+    border-radius: 50%; 
+  }
+  .profileText{
+    margin-bottom: 20px;
+  }
+  .profileText h2{
+    font-size: 1.5em;
+    font-weight :500;
+    margin-bottom: 7px;
+  }
+  .profileText h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+  } 
+  .top{
+    overflow: hidden;
+    width: 10%;
+  }
+  .top a{
+    display: block;
+    float:none;  
+    color: #475046;
+    text-align: center;
+    font-size: 20px;
+    padding: 14px 16px;   
+    text-decoration: none;  
+  }
+  .top a:hover{
+    background-color:white; 
+    color: black;
+  }

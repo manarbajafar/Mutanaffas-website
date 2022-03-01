@@ -1,0 +1,209 @@
+@font-face {
+  font-family: font;
+  src: url(Cairo-ExtraLight-3.ttf);
+  font-weight: bold;
+}
+body{
+    background-color: #FDEEE4;
+    position: relative; 
+    font-family: font;
+}
+/*Heder content*/
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+}
+nav ul li a {
+  color: #2A595C;
+  display: block;
+  line-height: 4.3em;
+  padding: 1em 3em;
+  text-decoration: none;
+}
+nav ul li:last-child {
+  margin-left: auto;
+}
+nav ul li a:hover {
+  opacity: 0.9;
+}
+/*drop down menu list*/
+nav ul li ul {
+  background-color: #475046;
+  display: none;
+  position: absolute;
+  padding: 15px;
+  text-align: center;
+  border-radius: 7px;
+}
+nav ul li:hover ul {
+  display: block;
+}
+nav ul li ul li {
+  font-size: 12px;
+}
+nav ul li ul li a {
+  padding: 0px 4px;
+  color: #FDEEE4;
+}
+/*Text in the main page*/
+.text-box{
+  width: 90%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,40%);
+  text-align: center;
+}
+#h1{
+  font-size: 2em;
+  color:#2A595C;
+}
+#sentence{
+  font-size: 1em;
+  color: #777a6f;
+  padding-bottom: 5%;
+}
+/*Footer icons*/
+.icon{
+  width: 7%;
+  height: 7%;
+  margin: 2px 12px;
+}
+.icon:hover{
+  opacity: 0.8;
+}
+footer{
+  background-color: #475046;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5%; 
+}
+.fa{
+  padding: 3px;
+  width: 10px;
+  text-decoration: none;
+  color: #EBCAB2;
+}
+
+
+/*About Page*/
+/*Here is the js code for fade effect*/
+#h1-about{
+  font-weight: bolder;
+  font-size: 3em;
+  color:#475046;
+}
+#sentence-about{
+  font-size: 1em;
+  color: #777a6f;
+  padding: 0.5%;
+  background-color: rgba(255, 255, 255, 0.671);
+  width: 42%;
+  text-align: right;
+  margin: auto;
+}
+.about-pic{
+  padding-left: 750px; 
+}
+
+/*Famous Page*/
+.famous-header{
+  font-weight: bolder;
+  font-size: 2em;
+  color:#475046;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.famous-img{
+  display: flex;
+}
+.box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  transition: 0.5s;
+  text-align: right;
+}
+.box:hover{
+  height: 400px;
+}
+.box:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #777a6f;
+  border-radius: 7px;
+  z-index: -1;
+}
+.box:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #777a6f83;
+  z-index: -1;
+  filter: blur(40px)
+}
+
+.box .imgBx{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box; 
+}
+.box .imgBx img{
+  max-width: 100%;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+.box:hover .imgBx img{
+  opacity: 1;
+}
+
+.box .content{
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s; 
+}
+.box:hover .content{
+  opacity: 1;
+  transition: 0.5s; 
+}
+.box .content h2{
+  font-size: 20px;
+  font-weight: 500;
+  color: #ecd6c7;
+  line-height: 20px;
+}
+.box .content h2 span{
+  font-size: 14px;
+  font-weight: 200;
+  color: #EBCAB2;
+}

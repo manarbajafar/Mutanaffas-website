@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>تواصل معنا</title>
+    <link rel="stylesheet" href="css/style.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+
+       <style>
+         h1,h3{
+        color:#2A595C;  
+        }
+
+        label{
+          display: block;
+          font-size: 17px;  
+        }  
+        input{
+          width: 300px;  
+          height: 30px;  
+          border: none;  
+          border-radius: 3px;  
+        } 
+        #buttonSubmit{  
+            width: 300px;  
+            height: 30px;  
+            border: none;  
+            background-color:#475046; 
+            color: #FDEEE4;
+            border-radius: 17px;  
+            margin-top: 20px;
+            margin-bottom: 10px; 
+            cursor: pointer;
+            font-family: font;
+            font-size:15px;
+        } 
+        #buttonSubmit:hover{
+        opacity: 0.9;
+      }
+
+        textarea{
+          width: 300px;  
+          height: 100px;  
+          border: none;  
+          border-radius: 3px;  
+        }
+        select{
+          width: 300px;  
+          height: 30px;  
+          border: none;  
+          border-radius: 3px;
+        }
+      </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+
+          <li><a a href="#"><img src="css/down.png" width="7" height="8">المزيد</a>
+            <ul>
+              <li><a href="famous.html">أشهر الرسامين</a></li>
+              <li><a href="courses.html">دورات الرسم</a></li>
+              <li><a href="tools.html">أدوات الرسم</a></li>
+              <li><a href="drawings.html">رسومات</a></li>
+            </ul>
+          </li>
+
+          <li><a href="logIn.html">تسجيل الدخول</a>
+          </li>
+          <li><a a href="createAcc.html">تسجيل</a>
+          </li>
+          <li><a href="contactUs.html">تواصل معنا</a>
+          </li>
+          <li><a href="about.html">عن متنفس</a>
+          </li>
+          <li><a href="index.html" id="logo"><img src="css/logo.png" width="45" height="105"></a>
+          </li>
+        </ul>
+      </nav>
+
+    <div class="content" dir="rtl">
+        <h1>تواصل معنا &nbsp;</h1>
+        <hr>
+        <h3>نحن نعمل باستمرار لجعل تجربتك في متنفس أسهل، سنقوم بالرد على رسالتكم خلال 24 ساعة</h3>
+    </div>
+    <div class="content" dir="rtl">
+        <form class="" name="myForm" action="#">
+            <br>
+            <label>الاسم الكامل *: <br><input type="text" name="name" size="30" maxlength="12" required /> </label>
+            <br>
+            <label> البريد الإلكتروني*: <br><input type="text" id="email" name="email"   size="30" maxlength="26" required placeholder="****@***.***"/></label>
+            <br>
+            <label> نوع الرسالة:<br>
+                <select name="select" id="select" size="1">
+                    <option value="idea">اقتراح</option>
+                    <option value="">استفسار</option>
+                    <option value="">شكوى</option>
+                    <option value="">أخرى</option>
+                </select>
+            </label>
+            <br>
+            <label> الرسالة*:</label>
+            <textarea id="textarea"  name="textarea" rows="6" cols="60" required></textarea>
+            <p id="demo"></p>
+            <input id="buttonSubmit" type="submit" value="إرسال" />
+            <br>
+            <br>
+
+        </form>
+        <br>
+    </div>
+
+    
+
+
+<footer>
+    <div class="icon">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+</footer>
+
+</body>
+
+</html>
