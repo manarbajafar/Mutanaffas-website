@@ -4,12 +4,12 @@
 # Credits
 This project was developed by:
 
-1. Manar Bajafar
-2. Majd Alghamdi
-3. Nouf Almikhlafi
-4. Raghad Al-rwuily 
-5. Haifa Alshareef
+1. Tasneem Ali Al-Zahrani
+2. Manar Ahmed Bajafar
+3. Nouf Mohammed Al-Mikhlafi
+4. Jumana Mohammed Al-Wafi
+5. Manar Muhammad Al-Imam
 
-As a requirement for Internet application course at UQU.
+As a requirement for Advanced web programming course at UQU.
 
 Enjoy! hopefully this project will help you to make more creative projects :)
